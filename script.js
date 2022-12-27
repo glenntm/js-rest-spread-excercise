@@ -43,3 +43,13 @@ function combine(obj1, obj2) {
 function update(obj, key, val) {
 
 }
+
+function createAnimal(species, verb, noise){
+    return {
+        species,
+        [verb](){
+            return noise;
+        } 
+    }
+
+}
