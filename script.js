@@ -53,3 +53,14 @@ function createAnimal(species, verb, noise){
     }
 
 }
+
+function raceResults(array){
+    //const raceResults = ([first, second, third, ...rest]) => ({first, second, third, rest});
+   let newObj = {
+    first: array[0],
+    second: array[1],
+    third: array[2],
+    rest: array.slice(3)
+   }
+   return newObj;
+}
